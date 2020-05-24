@@ -17,6 +17,7 @@ $router->group(['prefix' => 'user'], function () use ($router) {
     $router->get('view-profile','UserController@viewProfile');
     $router->get('logout','UserController@logout');
     $router->post('refresh-token','UserController@refreshToken');
+    $router->post('create-post','PostController@store');
 
 });
 
